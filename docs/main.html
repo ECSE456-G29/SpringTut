@@ -867,12 +867,56 @@ You can override any version you wish, but it will default to Boot’s chosen se
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_create_a_resource_representation_class">Create a resource representation class</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Now that you’ve set up the project and build system, you can create your web service.</p></div>
+<div class="paragraph"><p>Begin the process by thinking about service interactions.</p></div>
+<div class="paragraph"><p>The service will handle <code>GET</code> requests for <code>/greeting</code>, optionally with a name parameter in the query string.
+The <code>GET</code> request should return a <code>200 OK</code> response with <code>JSON</code> in the body that represents a greeting.
+It should look something like this:</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><code>{
+    "id": 1,
+    "content": "Hello, World!"
+}</code></pre>
+</div></div>
+<div class="paragraph"><p>The <code>id</code> field is a unique identifier for the greeting, and <code>content</code> is the textual representation of the greeting.</p></div>
+<div class="paragraph"><p>To model the greeting representation, you create a resource representation class.
+Provide a plain old java object with fields, constructors, and accessors for the <code>id</code> and <code>content</code> data:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><code>package hello;
+
+public class Greeting {
+
+  private final long id;
+  private final String content;
+
+  public Greeting(long id, String content) {
+    this.id = id;
+    this.content = content;
+  }
+
+  public long getId() {
+    return id;
+  }
+
+  public String getContent {
+    return content;
+  }
+}</code></pre>
+</div></div>
+<div class="paragraph"><p>Next you create the resource controller that will serve these greetings.</p></div>
+</div>
+</div>
 </div>
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2017-11-19 17:56:25 EST
+ 2017-11-19 18:08:53 EST
 </div>
 </div>
 </body>

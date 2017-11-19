@@ -1,4 +1,5 @@
 :rootdir: ../..
+:sourcedir: ../../src/main/java
 
 = Building a RESTful Web Service
 
@@ -34,3 +35,5 @@ The name parameter value overrides the default value of "World" and is reflected
 * Gradle 2.3+
 
 include::1/main.adoc[]
+
+include::2/main.adoc[]

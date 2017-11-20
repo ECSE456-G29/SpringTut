@@ -7,18 +7,20 @@ The service will handle `GET` requests for `/greeting`, optionally with a name p
 The `GET` request should return a `200 OK` response with `JSON` in the body that represents a greeting.
 It should look something like this:
 
-....
+[source,json]
+----
 {
     "id": 1,
     "content": "Hello, World!"
 }
-....
+----
 
 The `id` field is a unique identifier for the greeting, and `content` is the textual representation of the greeting.
 
 To model the greeting representation, you create a resource representation class.
 Provide a plain old java object with fields, constructors, and accessors for the `id` and `content` data:
 
+[source,java]
 ----
 include::{sourcedir}/hello/Greeting.java[]
 ----

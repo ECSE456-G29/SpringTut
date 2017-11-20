@@ -1,5 +1,7 @@
 :rootdir: ../..
 :sourcedir: ../../src/main/java
+:source-highlighter: pygments
+
 
 = Building a RESTful Web Service
 

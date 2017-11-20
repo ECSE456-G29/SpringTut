@@ -2,6 +2,7 @@
 In Spring’s approach to building RESTful web services, HTTP requests are handled by a controller.
 These components are easily identified by the `@RestController` annotation, and the `GreetingController` below handles `GET` requests for `/greeting` by returning a new instance of the `Greeting` class:
 
+[source,java]
 ----
 include::{sourcedir}/hello/GreetingController.java[]
 ----

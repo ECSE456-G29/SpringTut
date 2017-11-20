@@ -20,3 +20,6 @@ git cherry-pick 4142c62
 git cherry-pick d4b78ea
 ...
 ```
+
+## Reference
+See [the design document](https://docs.google.com/document/d/1qmkQzpdWPP9n91PAc9Cg7Z6F534QkQ-poqU2cCqXDH8) for more info.

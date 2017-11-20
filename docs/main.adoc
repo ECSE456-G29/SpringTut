@@ -37,3 +37,5 @@ The name parameter value overrides the default value of "World" and is reflected
 include::1/main.adoc[]
 
 include::2/main.adoc[]
+
+include::3/main.adoc[]

@@ -42,6 +42,8 @@ include::2/main.adoc[]
 
 include::3/main.adoc[]
 
+include::4/main.adoc[]
+
 == Test the service
 
 Now that the service is up, visit http://localhost:8080/greeting, where you see:
